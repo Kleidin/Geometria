@@ -1,8 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
-class GeometriaPlana {
+public class GeometriaPlana {
     private GeometriaPlana() {}
 
     public static double calcularAreaQuadrado(double lado) {
