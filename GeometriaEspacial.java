@@ -1,4 +1,4 @@
-class GeometriaEspacial {
+public class GeometriaEspacial {
     private GeometriaEspacial() {}
 
     public static double calcularAreaPrisma(double areaBase, double altura) {
@@ -27,7 +27,8 @@ class GeometriaEspacial {
         return (areaBase * altura) / 3;
     }
 
-    public static double calcularAreaCone(double raio, double geratriz) {
+    public static double calcularAreaCone(double raio, double altura) {
+        double geratriz = Math.sqrt(Math.pow(raio, 2) + Math.pow(altura, 2));
         return Math.PI * raio * (raio + geratriz);
     }
 
