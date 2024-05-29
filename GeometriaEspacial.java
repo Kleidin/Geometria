@@ -46,8 +46,8 @@ public class GeometriaEspacial {
     }
 
     public static double calcularAreaTroncoPiramide(double areaBaseMaior, double areaBaseMenor, double altura, double apotema) {
-        double perimetroBaseMaior = 4 * Math.sqrt(areaBaseMaior); // Assumindo base quadrada
-        double perimetroBaseMenor = 4 * Math.sqrt(areaBaseMenor); // Assumindo base quadrada
+        double perimetroBaseMaior = 4 * Math.sqrt(areaBaseMaior);
+        double perimetroBaseMenor = 4 * Math.sqrt(areaBaseMenor);
         return areaBaseMaior + areaBaseMenor + (perimetroBaseMaior + perimetroBaseMenor) * apotema / 2;
     }
 
