@@ -56,7 +56,7 @@ public class Main {
                     System.out.println("Saindo...");
                     break;
                 default:
-                    System.out.println("Opção inválida. Por favor, tente novamente.");
+                    System.out.println("Opção invAlida. Por favor, tente novamente.");
                     break;
             }
         } while (escolha != 15);
@@ -66,126 +66,126 @@ public class Main {
 
     private static void mostrarMenu() {
         System.out.println("\n=============================================");
-        System.out.println("              Menu de Opções");
+        System.out.println("              Menu de Opçoes");
         System.out.println("=============================================");
-        System.out.println("1.  Área do Quadrado");
-        System.out.println("2.  Área do Retângulo");
-        System.out.println("3.  Área do Triângulo");
-        System.out.println("4.  Área do Paralelogramo");
-        System.out.println("5.  Área do Losango");
-        System.out.println("6.  Área do Trapézio");
-        System.out.println("7.  Área da Circunferência");
-        System.out.println("8.  Área e Volume do Prisma");
-        System.out.println("9.  Área e Volume do Cilindro");
-        System.out.println("10. Área e Volume da Pirâmide");
-        System.out.println("11. Área e Volume do Cone");
-        System.out.println("12. Área e Volume do Tronco do Cone");
-        System.out.println("13. Área e Volume do Tronco da Pirâmide");
-        System.out.println("14. Área e Volume da Esfera");
+        System.out.println("1.  Area do Quadrado");
+        System.out.println("2.  Area do Retangulo");
+        System.out.println("3.  Area do Triangulo");
+        System.out.println("4.  Area do Paralelogramo");
+        System.out.println("5.  Area do Losango");
+        System.out.println("6.  Area do Trapezio");
+        System.out.println("7.  Area da Circunferencia");
+        System.out.println("8.  Area e Volume do Prisma");
+        System.out.println("9.  Area e Volume do Cilindro");
+        System.out.println("10. Area e Volume da Piramide");
+        System.out.println("11. Area e Volume do Cone");
+        System.out.println("12. Area e Volume do Tronco do Cone");
+        System.out.println("13. Area e Volume do Tronco da Piramide");
+        System.out.println("14. Area e Volume da Esfera");
         System.out.println("15. Sair");
         System.out.print("Escolha uma opção: ");
     }
 
     private static String calcularAreaQuadrado(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Quadrado");
+        System.out.println("              Area do Quadrado");
         System.out.println("=============================================");
         System.out.print("Digite o lado do quadrado: ");
         double lado = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaQuadrado(lado);
-        return "A área do quadrado é: " + area;
+        return "A Area do quadrado e: " + area;
     }
 
     private static String calcularAreaRetangulo(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Retângulo");
+        System.out.println("              Area do Retangulo");
         System.out.println("=============================================");
-        System.out.print("Digite a base do retângulo: ");
+        System.out.print("Digite a base do retangulo: ");
         double base = scanner.nextDouble();
-        System.out.print("Digite a altura do retângulo: ");
+        System.out.print("Digite a altura do retangulo: ");
         double altura = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaRetangulo(base, altura);
-        return "A área do retângulo é: " + area;
+        return "A Area do retangulo e: " + area;
     }
 
     private static String calcularAreaTriangulo(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Triângulo");
+        System.out.println("              Area do Triangulo");
         System.out.println("=============================================");
-        System.out.print("Digite a base do triângulo: ");
+        System.out.print("Digite a base do triangulo: ");
         double base = scanner.nextDouble();
-        System.out.print("Digite a altura do triângulo: ");
+        System.out.print("Digite a altura do triangulo: ");
         double altura = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaTriangulo(base, altura);
-        return "A área do triângulo é: " + area;
+        return "A Area do triangulo e: " + area;
     }
 
     private static String calcularAreaParalelogramo(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Paralelogramo");
+        System.out.println("              Area do Paralelogramo");
         System.out.println("=============================================");
         System.out.print("Digite a base do paralelogramo: ");
         double base = scanner.nextDouble();
         System.out.print("Digite a altura do paralelogramo: ");
         double altura = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaParalelogramo(base, altura);
-        return "A área do paralelogramo é: " + area;
+        return "A Area do paralelogramo e: " + area;
     }
 
     private static String calcularAreaLosango(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Losango");
+        System.out.println("              Area do Losango");
         System.out.println("=============================================");
         System.out.print("Digite a diagonal maior do losango: ");
         double diagonalMaior = scanner.nextDouble();
         System.out.print("Digite a diagonal menor do losango: ");
         double diagonalMenor = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaLosango(diagonalMaior, diagonalMenor);
-        return "A área do losango é: " + area;
+        return "A Area do losango e: " + area;
     }
 
     private static String calcularAreaTrapezio(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área do Trapézio");
+        System.out.println("              Area do Trapezio");
         System.out.println("=============================================");
-        System.out.print("Digite a base maior do trapézio: ");
+        System.out.print("Digite a base maior do trapezio: ");
         double baseMaior = scanner.nextDouble();
-        System.out.print("Digite a base menor do trapézio: ");
+        System.out.print("Digite a base menor do trapezio: ");
         double baseMenor = scanner.nextDouble();
-        System.out.print("Digite a altura do trapézio: ");
+        System.out.print("Digite a altura do trapezio: ");
         double altura = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaTrapezio(baseMaior, baseMenor, altura);
-        return "A área do trapézio é: " + area;
+        return "A Area do trapezio e: " + area;
     }
 
     private static String calcularAreaCircunferencia(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área da Circunferência");
+        System.out.println("              Area da Circunferencia");
         System.out.println("=============================================");
-        System.out.print("Digite o raio da circunferência: ");
+        System.out.print("Digite o raio da circunferencia: ");
         double raio = scanner.nextDouble();
         double area = GeometriaPlana.calcularAreaCircunferencia(raio);
-        return "A área da circunferência é: " + area;
+        return "A Area da circunferencia e: " + area;
     }
 
     private static String calcularAreaEVolumePrisma(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume do Prisma");
+        System.out.println("              Area e Volume do Prisma");
         System.out.println("=============================================");
         System.out.print("Digite o perímetro da base do prisma: ");
         double perimetroBase = scanner.nextDouble();
-        System.out.print("Digite a área da base do prisma: ");
+        System.out.print("Digite a Area da base do prisma: ");
         double areaBase = scanner.nextDouble();
         System.out.print("Digite a altura do prisma: ");
         double altura = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaPrisma(perimetroBase, areaBase, altura);
         double volume = GeometriaEspacial.calcularVolumePrisma(areaBase, altura);
-        return "A área do prisma é: " + area + "\nO volume do prisma é: " + volume;
+        return "A Area do prisma e: " + area + "\nO volume do prisma e: " + volume;
     }
 
     private static String calcularAreaEVolumeCilindro(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume do Cilindro");
+        System.out.println("              Area e Volume do Cilindro");
         System.out.println("=============================================");
         System.out.print("Digite o raio do cilindro: ");
         double raio = scanner.nextDouble();
@@ -193,29 +193,29 @@ public class Main {
         double altura = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaCilindro(raio, altura);
         double volume = GeometriaEspacial.calcularVolumeCilindro(raio, altura);
-        return "A área do cilindro é: " + area + "\nO volume do cilindro é: " + volume;
+        return "A Area do cilindro e: " + area + "\nO volume do cilindro e: " + volume;
     }
 
     private static String calcularAreaEVolumePiramide(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume da Pirâmide");
+        System.out.println("              Area e Volume da Piramide");
         System.out.println("=============================================");
-        System.out.print("Digite o perímetro da base da pirâmide: ");
+        System.out.print("Digite o perímetro da base da piramide: ");
         double perimetroBase = scanner.nextDouble();
-        System.out.print("Digite a área da base da pirâmide: ");
+        System.out.print("Digite a Area da base da piramide: ");
         double areaBase = scanner.nextDouble();
-        System.out.print("Digite a altura da pirâmide: ");
+        System.out.print("Digite a altura da piramide: ");
         double altura = scanner.nextDouble();
-        System.out.print("Digite o apótema da pirâmide: ");
+        System.out.print("Digite o apótema da piramide: ");
         double apotema = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaPiramide(perimetroBase, areaBase, apotema);
         double volume = GeometriaEspacial.calcularVolumePiramide(areaBase, altura);
-        return "A área da pirâmide é: " + area + "\nO volume da pirâmide é: " + volume;
+        return "A Area da piramide e: " + area + "\nO volume da piramide e: " + volume;
     }
 
     private static String calcularAreaEVolumeCone(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume do Cone");
+        System.out.println("              Area e Volume do Cone");
         System.out.println("=============================================");
         System.out.print("Digite o raio da base do cone: ");
         double raioBase = scanner.nextDouble();
@@ -223,12 +223,12 @@ public class Main {
         double altura = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaCone(raioBase, altura);
         double volume = GeometriaEspacial.calcularVolumeCone(raioBase, altura);
-        return "A área do cone é: " + area + "\nO volume do cone é: " + volume;
+        return "A Area do cone e: " + area + "\nO volume do cone e: " + volume;
     }
 
     private static String calcularAreaEVolumeTroncoCone(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume do Tronco do Cone");
+        System.out.println("              Area e Volume do Tronco do Cone");
         System.out.println("=============================================");
         System.out.print("Digite o raio maior da base do tronco do cone: ");
         double raioMaior = scanner.nextDouble();
@@ -238,34 +238,34 @@ public class Main {
         double altura = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaTroncoCone(raioMaior, raioMenor, altura);
         double volume = GeometriaEspacial.calcularVolumeTroncoCone(raioMaior, raioMenor, altura);
-        return "A área do tronco do cone é: " + area + "\nO volume do tronco do cone é: " + volume;
+        return "A Area do tronco do cone e: " + area + "\nO volume do tronco do cone e: " + volume;
     }
 
     private static String calcularAreaEVolumeTroncoPiramide(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume do Tronco da Pirâmide");
+        System.out.println("              Area e Volume do Tronco da Piramide");
         System.out.println("=============================================");
-        System.out.print("Digite a área da base maior do tronco da pirâmide: ");
+        System.out.print("Digite a Area da base maior do tronco da piramide: ");
         double areaBaseMaior = scanner.nextDouble();
-        System.out.print("Digite a área da base menor do tronco da pirâmide: ");
+        System.out.print("Digite a Area da base menor do tronco da piramide: ");
         double areaBaseMenor = scanner.nextDouble();
-        System.out.print("Digite a altura do tronco da pirâmide: ");
+        System.out.print("Digite a altura do tronco da piramide: ");
         double altura = scanner.nextDouble();
-        System.out.print("Digite o apótema do tronco da pirâmide: ");
+        System.out.print("Digite o apótema do tronco da piramide: ");
         double apotema = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaTroncoPiramide(areaBaseMaior, areaBaseMenor, altura, apotema);
         double volume = GeometriaEspacial.calcularVolumeTroncoPiramide(areaBaseMaior, areaBaseMenor, altura);
-        return "A área do tronco da pirâmide é: " + area + "\nO volume do tronco da pirâmide é: " + volume;
+        return "A Area do tronco da piramide e: " + area + "\nO volume do tronco da piramide e: " + volume;
     }
 
     private static String calcularAreaEVolumeEsfera(Scanner scanner) {
         System.out.println("\n=============================================");
-        System.out.println("              Área e Volume da Esfera");
+        System.out.println("              Area e Volume da Esfera");
         System.out.println("=============================================");
         System.out.print("Digite o raio da esfera: ");
         double raio = scanner.nextDouble();
         double area = GeometriaEspacial.calcularAreaEsfera(raio);
         double volume = GeometriaEspacial.calcularVolumeEsfera(raio);
-        return "A área da esfera é: " + area + "\nO volume da esfera é: " + volume;
+        return "A Area da esfera e: " + area + "\nO volume da esfera e: " + volume;
     }
 }
